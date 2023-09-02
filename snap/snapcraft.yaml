@@ -55,3 +55,5 @@ apps:
     command: synapse.sh
     daemon: simple
     plugs: [network, network-bind]
+  register-new-matrix-user:
+    command: opt/venvs/matrix-synapse/bin/python $SNAP/opt/venvs/matrix-synapse/bin/register_new_matrix_user -c $SNAP_DATA/homeserver.yaml

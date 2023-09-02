@@ -5,6 +5,11 @@ if [ ! -f "$SNAP_DATA/homeserver.yaml" ]; then
     cp $SNAP/default/homeserver.yaml "$SNAP_DATA/homeserver.yaml"
 fi
 
+if [ ! -f "$SNAP_DATA/log.yaml" ]; then
+    echo "Creating default log configuration file..."
+    cp $SNAP/default/log.yaml "$SNAP_DATA/log.yaml"
+fi
+
 if [ ! -d "$SNAP_DATA/media" ]; then
     echo "Creating default media directory..."
     mkdir "$SNAP_DATA/media"

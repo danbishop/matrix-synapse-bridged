@@ -26,6 +26,7 @@ parts:
     stage-packages:
       - matrix-synapse-py3
       - libpq5
+      - ca-certificates
   default-config:
       # custom default config is shipped for the snap version
       plugin: dump

@@ -26,19 +26,6 @@ parts:
     stage-packages:
       - matrix-synapse-py3
       - libpq5
-      - openssl
-      - dh-python
-      - python3-all
-      - python3-cffi
-      - python3-cryptography
-      - python3-flaky
-      - python3-pretend
-      - python3-pytest
-      - python3-setuptools
-      - python3-six
-      - python3-sphinx
-      - python3-sphinx-rtd-theme
-      - libssl-dev
   default-config:
       # custom default config is shipped for the snap version
       plugin: dump
@@ -57,3 +44,4 @@ apps:
     plugs: [network, network-bind]
   register-new-matrix-user:
     command: opt/venvs/matrix-synapse/bin/python $SNAP/opt/venvs/matrix-synapse/bin/register_new_matrix_user -c $SNAP_DATA/homeserver.yaml
+    plugs: [network, network-bind]

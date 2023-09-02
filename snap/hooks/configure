@@ -6,8 +6,8 @@ if [ ! -f "$SNAP_DATA/homeserver.yaml" ]; then
 fi
 
 # Create registration_shared_secret if none exists
-if grep "registration_shared_secret:" "$SNAP_DATA/homeserver.yaml"; then
-  echo "registration_shared_secret:"`openssl rand -base64 64` >> $SNAP_DATA/homeserver.yaml
+if ! grep "registration_shared_secret:" "$SNAP_DATA/homeserver.yaml"; then
+  echo "registration_shared_secret: \""`openssl rand -base64 64`"\"" >> $SNAP_DATA/homeserver.yaml
 fi
 
 if [ ! -f "$SNAP_DATA/log.yaml" ]; then

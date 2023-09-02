@@ -1,4 +1,4 @@
-name: matrix-synapse # you probably want to 'snapcraft register <name>'
+name: matrix-synapse-bridged # you probably want to 'snapcraft register <name>'
 base: core22
 version: '1.91'
 summary: Synapse is an open-source Matrix server written by the Matrix.org Foundation.
@@ -8,8 +8,8 @@ description: |
   say about the goals of the Matrix project, and the formal specification
   describes the technical details.
 
-grade: devel # must be 'stable' to release into candidate/stable channels
-confinement: devmode # use 'strict' once you have the right plugs and slots
+grade: stable # must be 'stable' to release into candidate/stable channels
+confinement: strict # use 'strict' once you have the right plugs and slots
 
 package-repositories:
   - type: apt

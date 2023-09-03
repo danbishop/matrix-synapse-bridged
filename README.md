@@ -7,13 +7,13 @@ sudo nano /var/snap/matrix-synapse-bridged/current/homeserver.yaml
 ```
 
 Set the server name, e.g. "matrix.example.com". Then restart the server.
-This configuration file will be automatically backed up and transferred between
-new releases. If a breakage should occur, you can run "snap revert matrix-synapse-bridged"
-to restore the previous version.
 
 ```console
 sudo snap restart matrix-synapse-bridged.synapse
-```
+
+This configuration file will be automatically backed up and transferred between
+new releases. If a breakage should occur, you can run "snap revert matrix-synapse-bridged"
+to restore the previous version.```
 
 ## Reverse Proxy
 

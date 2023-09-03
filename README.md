@@ -7,6 +7,9 @@ sudo nano /var/snap/matrix-synapse-bridged/current/homeserver.yaml
 ```
 
 Set the server name, e.g. "matrix.example.com". Then restart the server.
+This configuration file will be automatically backed up and transferred between
+new releases. If a breakage should occur, you can run "snap revert matrix-synapse-bridged"
+to restore the previous version.
 
 ```console
 sudo snap restart matrix-synapse-bridged.synapse
@@ -24,3 +27,6 @@ using the following command and following the prompts.
 ```console
 matrix-synapse-bridged.register-new-matrix-user
 ```
+## Database
+
+By default this setup will use an SQLITE database. This won't be highly performant.

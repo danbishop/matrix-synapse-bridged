@@ -18,7 +18,7 @@ Setup a reverse proxy: <https://matrix-org.github.io/synapse/latest/reverse_prox
 
 ## Creating a User
 
-BY default self registration is disabled. You can enable it by , or you can create a user
+By default self registration is disabled. You can enable it by , or you can create a user
 using the following command and following the prompts.
 
 ```console

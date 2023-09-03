@@ -28,6 +28,14 @@ using the following command and following the prompts.
 ```console
 matrix-synapse-bridged.register-new-matrix-user
 ```
+
 ## Database
 
 By default this setup will use an SQLITE database. This won't be highly performant.
+You can setup a PostgreSQL database as detailed here: https://matrix-org.github.io/synapse/latest/postgres.html
+
+At the config stage, use the below to edit your config file and provide the new database settings:
+
+```console
+sudo nano /var/snap/matrix-synapse-bridged/current/homeserver.yaml
+```

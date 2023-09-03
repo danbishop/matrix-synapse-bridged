@@ -8,6 +8,8 @@ description: |
   say about the goals of the Matrix project, and the formal specification
   describes the technical details.
 
+  For setup instructions see: https://github.com/danbishop/matrix-synapse-bridged
+
 grade: stable # must be 'stable' to release into candidate/stable channels
 confinement: strict # use 'strict' once you have the right plugs and slots
 

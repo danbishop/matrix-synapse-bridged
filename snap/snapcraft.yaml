@@ -11,6 +11,10 @@ description: |
 grade: stable # must be 'stable' to release into candidate/stable channels
 confinement: strict # use 'strict' once you have the right plugs and slots
 
+website: https://github.com/danbishop/matrix-synapse-bridged
+contact: d@nbishop.uk
+license: GPL-3.0
+
 package-repositories:
   - type: apt
     components: [main]

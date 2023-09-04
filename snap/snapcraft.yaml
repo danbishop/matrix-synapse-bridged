@@ -17,6 +17,9 @@ website: https://github.com/danbishop/matrix-synapse-bridged
 contact: d@nbishop.uk
 license: GPL-3.0
 
+architectures:
+  - build-on: amd64
+
 package-repositories:
   - type: apt
     components: [main]
